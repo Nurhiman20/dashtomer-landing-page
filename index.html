@@ -13,9 +13,9 @@
 
     <!-- Header -->
     <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center py-6 px-8">
+        <div class="flex flex-row justify-between items-center py-6 px-[100px]">
             <h1 class="text-2xl font-bold text-indigo-600">Dashtomer</h1>
-            <nav>
+            <nav class="hidden md:flex lg:flex">
                 <ul class="flex space-x-8">
                     <li><a href="#home" class="hover:text-indigo-500">Home</a></li>
                     <li><a href="#features" class="hover:text-indigo-500">Features</a></li>
@@ -27,12 +27,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero h-[100vh]">
+    <section id="home" class="hero h-[100vh] w-full">
         <div class="hero__gradient" />
         <div class="hero__image">
-            <img src="assets/images/hero-bg.jpg" alt="AI Chatbot" class="rounded-lg shadow-md">
+            <img src="assets/images/hero-bg.jpg" alt="customer-service" class="rounded-lg shadow-md">
         </div>
-        <div class="hero__content flex flex-col h-full justify-center px-4 lg:px-[105px] mt-3 lg:mt-0 w-1/2">
+        <div class="hero__content flex flex-col h-full justify-center mt-3 lg:mt-0 md:w-1/2 w-full px-[100px]">
             <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">Empower Your Customers</h2>
             <p class="text-gray-600 text-lg mb-6 text-white">Elevate their experience with Dashtomer. We provide intelligent, AI chatbots that delight both your customer success team and your customer base.</p>
             <button onclick="scrollToContact()" class="bg-indigo-600 text-white px-6 py-3 rounded font-semibold hover:bg-indigo-700 transition mr-auto">Get Started</button>
