@@ -3,16 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashtomer: The Ultimate Concierge Superapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashtomer | AI Chatbot for Customer Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <section id="hero">
-        <div>
-            <h1>Test</h1>
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-6 px-8">
+            <h1 class="text-2xl font-bold text-indigo-600">Dashtomer</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="hover:text-indigo-500">Home</a></li>
+                    <li><a href="#features" class="hover:text-indigo-500">Features</a></li>
+                    <li><a href="#pricing" class="hover:text-indigo-500">Pricing</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-indigo-50 py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-8">
+            <div class="w-full md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Empower Your Customers</h2>
+                <p class="text-gray-600 text-lg mb-6">Elevate their experience with Dashtomer. We provide intelligent, AI chatbots that delight both your customer success team and your customer base.</p>
+                <button onclick="scrollToContact()" class="bg-indigo-600 text-white px-6 py-3 rounded font-semibold hover:bg-indigo-700 transition">Get Started</button>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img src="assets/images/hero-bg.jpg" alt="AI Chatbot" class="rounded-lg shadow-md">
+            </div>
         </div>
     </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Why Choose Dashtomer?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">AI-Powered Chatbot</h3>
+                    <p class="text-gray-600">Deliver smarter, faster, and more human-like interactions powered by advanced AI.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">Enhance Customer Success</h3>
+                    <p class="text-gray-600">Support your team by automating repetitive tasks and focusing on what matters most: human connection.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4">Boost Customer Satisfaction</h3>
+                    <p class="text-gray-600">Increase customer loyalty by providing fast, helpful, and personalized experiences 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Simple Pricing</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-md w-full md:w-1/3 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                    <p class="text-gray-600 mb-6">Perfect for small businesses starting their AI journey.</p>
+                    <p class="text-4xl font-bold text-indigo-600 mb-6">$29<span class="text-base font-normal">/month</span></p>
+                    <button class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Choose Plan</button>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md w-full md:w-1/3 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                    <p class="text-gray-600 mb-6">Advanced features for growing teams and businesses.</p>
+                    <p class="text-4xl font-bold text-indigo-600 mb-6">$99<span class="text-base font-normal">/month</span></p>
+                    <button class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-gray-600 mb-6">Interested in working with Dashtomer? Let's talk!</p>
+            <p class="text-gray-600">Email: <a href="mailto:contact@dashtomer.com" class="text-indigo-600 hover:underline">contact@dashtomer.com</a></p>
+            <p class="text-gray-600 mt-2">Phone: +62 812 3456 7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 text-center py-6">
+        <div class="container mx-auto px-6">
+            © 2025 Dashtomer. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
