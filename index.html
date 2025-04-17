@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashtomer | AI Chatbot for Customer Success</title>
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -26,21 +27,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="bg-indigo-50 py-20">
-        <div class="container mx-auto flex flex-col md:flex-row items-center px-8">
-            <div class="w-full md:w-1/2 mb-10 md:mb-0">
-                <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Empower Your Customers</h2>
-                <p class="text-gray-600 text-lg mb-6">Elevate their experience with Dashtomer. We provide intelligent, AI chatbots that delight both your customer success team and your customer base.</p>
-                <button onclick="scrollToContact()" class="bg-indigo-600 text-white px-6 py-3 rounded font-semibold hover:bg-indigo-700 transition">Get Started</button>
-            </div>
-            <div class="w-full md:w-1/2">
-                <img src="assets/images/hero-bg.jpg" alt="AI Chatbot" class="rounded-lg shadow-md">
-            </div>
+    <section id="home" class="hero h-[100vh]">
+        <div class="hero__gradient" />
+        <div class="hero__image">
+            <img src="assets/images/hero-bg.jpg" alt="AI Chatbot" class="rounded-lg shadow-md">
+        </div>
+        <div class="hero__content flex flex-col h-full justify-center px-4 lg:px-[105px] mt-3 lg:mt-0 w-1/2">
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">Empower Your Customers</h2>
+            <p class="text-gray-600 text-lg mb-6 text-white">Elevate their experience with Dashtomer. We provide intelligent, AI chatbots that delight both your customer success team and your customer base.</p>
+            <button onclick="scrollToContact()" class="bg-indigo-600 text-white px-6 py-3 rounded font-semibold hover:bg-indigo-700 transition mr-auto">Get Started</button>
         </div>
     </section>
 
+
     <!-- Features Section -->
-    <section id="features" class="py-20">
+    <section id="features" class="bg-white py-20">
         <div class="container mx-auto px-8 text-center">
             <h2 class="text-3xl font-bold mb-12">Why Choose Dashtomer?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
